@@ -104,6 +104,8 @@
 		345F34491EFE653A00E85797 /* SearchParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34351EFE653A00E85797 /* SearchParameter.swift */; };
 		345F344A1EFE653A00E85797 /* UsersParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34361EFE653A00E85797 /* UsersParameter.swift */; };
 		345F344B1EFE653A00E85797 /* WatchParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34371EFE653A00E85797 /* WatchParameter.swift */; };
+		345F34591EFE6CD300E85797 /* MutableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34571EFE6CD300E85797 /* MutableType.swift */; };
+		345F345A1EFE6CD300E85797 /* PageableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34581EFE6CD300E85797 /* PageableType.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +210,8 @@
 		345F34351EFE653A00E85797 /* SearchParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParameter.swift; sourceTree = "<group>"; };
 		345F34361EFE653A00E85797 /* UsersParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersParameter.swift; sourceTree = "<group>"; };
 		345F34371EFE653A00E85797 /* WatchParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchParameter.swift; sourceTree = "<group>"; };
+		345F34571EFE6CD300E85797 /* MutableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableType.swift; sourceTree = "<group>"; };
+		345F34581EFE6CD300E85797 /* PageableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageableType.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
 		C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -258,6 +262,7 @@
 				345F339A1EFE4ED900E85797 /* Issues */,
 				345F339F1EFE4ED900E85797 /* Notifications */,
 				345F34221EFE653A00E85797 /* Parameters */,
+				345F34561EFE6CD300E85797 /* Protocols */,
 				345F33A21EFE4ED900E85797 /* Public Keys */,
 				345F33A41EFE4ED900E85797 /* Pull Requests */,
 				345F33A81EFE4ED900E85797 /* Repositories */,
@@ -539,6 +544,15 @@
 			path = "Parameter Protocols";
 			sourceTree = "<group>";
 		};
+		345F34561EFE6CD300E85797 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				345F34571EFE6CD300E85797 /* MutableType.swift */,
+				345F34581EFE6CD300E85797 /* PageableType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		53ABB221CE4FDCE47758B0E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -707,6 +721,7 @@
 				345F33E91EFE4ED900E85797 /* Notification.swift in Sources */,
 				345F33D11EFE4ED900E85797 /* PullRequestEvent.swift in Sources */,
 				345F33E61EFE4ED900E85797 /* Issue.swift in Sources */,
+				345F345A1EFE6CD300E85797 /* PageableType.swift in Sources */,
 				345F33BF1EFE4ED900E85797 /* CommitStatus.swift in Sources */,
 				345F34461EFE653A00E85797 /* RepositoryOwnerType.swift in Sources */,
 				345F33C51EFE4ED900E85797 /* User.swift in Sources */,
@@ -729,6 +744,7 @@
 				345F33EE1EFE4ED900E85797 /* PullRequestState.swift in Sources */,
 				345F33CA1EFE4ED900E85797 /* IssueAction.swift in Sources */,
 				345F33BA1EFE4ED900E85797 /* Comment.swift in Sources */,
+				345F34591EFE6CD300E85797 /* MutableType.swift in Sources */,
 				345F33CB1EFE4ED900E85797 /* IssueCommentEvent.swift in Sources */,
 				345F341B1EFE652000E85797 /* GitRouter.swift in Sources */,
 				345F343A1EFE653A00E85797 /* GistsParameter.swift in Sources */,
