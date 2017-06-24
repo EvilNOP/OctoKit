@@ -111,6 +111,9 @@
 		345F34681EFEA38F00E85797 /* URLComponents+QueryAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34651EFEA38F00E85797 /* URLComponents+QueryAdditions.swift */; };
 		34BB7A6F1EFEA6DE005BF84A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A6C1EFEA6DE005BF84A /* Client.swift */; };
 		34BB7A701EFEA6DE005BF84A /* RxPaginationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */; };
+		34BB7A751EFEA7E8005BF84A /* BasicAuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A721EFEA7E8005BF84A /* BasicAuthPlugin.swift */; };
+		34BB7A761EFEA7E8005BF84A /* ContentTypePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A731EFEA7E8005BF84A /* ContentTypePlugin.swift */; };
+		34BB7A771EFEA7E8005BF84A /* OAuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A741EFEA7E8005BF84A /* OAuthPlugin.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -222,6 +225,9 @@
 		345F34651EFEA38F00E85797 /* URLComponents+QueryAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+QueryAdditions.swift"; sourceTree = "<group>"; };
 		34BB7A6C1EFEA6DE005BF84A /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPaginationProvider.swift; sourceTree = "<group>"; };
+		34BB7A721EFEA7E8005BF84A /* BasicAuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAuthPlugin.swift; sourceTree = "<group>"; };
+		34BB7A731EFEA7E8005BF84A /* ContentTypePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTypePlugin.swift; sourceTree = "<group>"; };
+		34BB7A741EFEA7E8005BF84A /* OAuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthPlugin.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
 		C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +279,7 @@
 				345F339A1EFE4ED900E85797 /* Issues */,
 				345F339F1EFE4ED900E85797 /* Notifications */,
 				345F34221EFE653A00E85797 /* Parameters */,
+				34BB7A711EFEA7E8005BF84A /* Plugins */,
 				345F34561EFE6CD300E85797 /* Protocols */,
 				345F33A21EFE4ED900E85797 /* Public Keys */,
 				345F33A41EFE4ED900E85797 /* Pull Requests */,
@@ -584,6 +591,16 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		34BB7A711EFEA7E8005BF84A /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A721EFEA7E8005BF84A /* BasicAuthPlugin.swift */,
+				34BB7A731EFEA7E8005BF84A /* ContentTypePlugin.swift */,
+				34BB7A741EFEA7E8005BF84A /* OAuthPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
 		53ABB221CE4FDCE47758B0E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,6 +793,7 @@
 				345F33EE1EFE4ED900E85797 /* PullRequestState.swift in Sources */,
 				345F33CA1EFE4ED900E85797 /* IssueAction.swift in Sources */,
 				345F33BA1EFE4ED900E85797 /* Comment.swift in Sources */,
+				34BB7A761EFEA7E8005BF84A /* ContentTypePlugin.swift in Sources */,
 				345F34591EFE6CD300E85797 /* MutableType.swift in Sources */,
 				345F33CB1EFE4ED900E85797 /* IssueCommentEvent.swift in Sources */,
 				34BB7A6F1EFEA6DE005BF84A /* Client.swift in Sources */,
@@ -791,6 +809,7 @@
 				345F34411EFE653A00E85797 /* PaginationType.swift in Sources */,
 				345F33BE1EFE4ED900E85797 /* CommitComment.swift in Sources */,
 				345F33DB1EFE4ED900E85797 /* Blob.swift in Sources */,
+				34BB7A751EFEA7E8005BF84A /* BasicAuthPlugin.swift in Sources */,
 				345F344B1EFE653A00E85797 /* WatchParameter.swift in Sources */,
 				345F343C1EFE653A00E85797 /* IssuesParameter.swift in Sources */,
 				345F341A1EFE652000E85797 /* GistsRouter.swift in Sources */,
@@ -806,6 +825,7 @@
 				345F33CD1EFE4ED900E85797 /* MemberAction.swift in Sources */,
 				345F33CF1EFE4ED900E85797 /* PublicEvent.swift in Sources */,
 				345F33D71EFE4ED900E85797 /* Gist.swift in Sources */,
+				34BB7A771EFEA7E8005BF84A /* OAuthPlugin.swift in Sources */,
 				345F34441EFE653A00E85797 /* RepositoryOwnerRefType.swift in Sources */,
 				345F33EB1EFE4ED900E85797 /* PublicKey.swift in Sources */,
 				345F33DA1EFE4ED900E85797 /* GistFileEdit.swift in Sources */,
