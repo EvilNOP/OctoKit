@@ -109,6 +109,8 @@
 		345F34661EFEA38F00E85797 /* Bundle+ResourcesAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34631EFEA38F00E85797 /* Bundle+ResourcesAdditions.swift */; };
 		345F34671EFEA38F00E85797 /* MultiTarget+Mutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34641EFEA38F00E85797 /* MultiTarget+Mutable.swift */; };
 		345F34681EFEA38F00E85797 /* URLComponents+QueryAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34651EFEA38F00E85797 /* URLComponents+QueryAdditions.swift */; };
+		34BB7A6F1EFEA6DE005BF84A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A6C1EFEA6DE005BF84A /* Client.swift */; };
+		34BB7A701EFEA6DE005BF84A /* RxPaginationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -218,6 +220,8 @@
 		345F34631EFEA38F00E85797 /* Bundle+ResourcesAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+ResourcesAdditions.swift"; sourceTree = "<group>"; };
 		345F34641EFEA38F00E85797 /* MultiTarget+Mutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MultiTarget+Mutable.swift"; sourceTree = "<group>"; };
 		345F34651EFEA38F00E85797 /* URLComponents+QueryAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+QueryAdditions.swift"; sourceTree = "<group>"; };
+		34BB7A6C1EFEA6DE005BF84A /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPaginationProvider.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
 		C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +263,7 @@
 				345F33601EFE4ED900E85797 /* Activity */,
 				345F33611EFE4ED900E85797 /* Authentication */,
 				345F33641EFE4ED900E85797 /* Base Models */,
+				34BB7A6B1EFEA6DE005BF84A /* Client */,
 				345F33691EFE4ED900E85797 /* Commits */,
 				345F336E1EFE4ED900E85797 /* Entities */,
 				345F33761EFE4ED900E85797 /* Events */,
@@ -562,6 +567,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		34BB7A6B1EFEA6DE005BF84A /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A6C1EFEA6DE005BF84A /* Client.swift */,
+				34BB7A6D1EFEA6DE005BF84A /* Provider */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		34BB7A6D1EFEA6DE005BF84A /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		53ABB221CE4FDCE47758B0E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -756,6 +778,7 @@
 				345F33BA1EFE4ED900E85797 /* Comment.swift in Sources */,
 				345F34591EFE6CD300E85797 /* MutableType.swift in Sources */,
 				345F33CB1EFE4ED900E85797 /* IssueCommentEvent.swift in Sources */,
+				34BB7A6F1EFEA6DE005BF84A /* Client.swift in Sources */,
 				345F341B1EFE652000E85797 /* GitRouter.swift in Sources */,
 				345F343A1EFE653A00E85797 /* GistsParameter.swift in Sources */,
 				345F33F21EFE4ED900E85797 /* DirectoryContent.swift in Sources */,
@@ -789,6 +812,7 @@
 				345F33E81EFE4ED900E85797 /* IssueState.swift in Sources */,
 				345F33D51EFE4ED900E85797 /* RefType.swift in Sources */,
 				345F33F61EFE4ED900E85797 /* GitCommitFile.swift in Sources */,
+				34BB7A701EFEA6DE005BF84A /* RxPaginationProvider.swift in Sources */,
 				345F34431EFE653A00E85797 /* RepositoryOwnerPathType.swift in Sources */,
 				345F34401EFE653A00E85797 /* OwnerType.swift in Sources */,
 				345F33F41EFE4ED900E85797 /* SubmoduleContent.swift in Sources */,
