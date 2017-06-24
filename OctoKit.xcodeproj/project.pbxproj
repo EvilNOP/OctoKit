@@ -74,6 +74,36 @@
 		345F33F71EFE4ED900E85797 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33B21EFE4ED900E85797 /* Repository.swift */; };
 		345F33F81EFE4ED900E85797 /* RepositoriesSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33B41EFE4ED900E85797 /* RepositoriesSearchResult.swift */; };
 		345F33FC1EFE4F4B00E85797 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33FB1EFE4F4B00E85797 /* Server.swift */; };
+		345F34181EFE652000E85797 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F340E1EFE652000E85797 /* AuthenticationRouter.swift */; };
+		345F34191EFE652000E85797 /* EventsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F340F1EFE652000E85797 /* EventsRouter.swift */; };
+		345F341A1EFE652000E85797 /* GistsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34101EFE652000E85797 /* GistsRouter.swift */; };
+		345F341B1EFE652000E85797 /* GitRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34111EFE652000E85797 /* GitRouter.swift */; };
+		345F341C1EFE652000E85797 /* IssuesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34121EFE652000E85797 /* IssuesRouter.swift */; };
+		345F341D1EFE652000E85797 /* NotificationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34131EFE652000E85797 /* NotificationsRouter.swift */; };
+		345F341E1EFE652000E85797 /* RepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34141EFE652000E85797 /* RepositoriesRouter.swift */; };
+		345F341F1EFE652000E85797 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34151EFE652000E85797 /* SearchRouter.swift */; };
+		345F34201EFE652000E85797 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34161EFE652000E85797 /* UsersRouter.swift */; };
+		345F34211EFE652000E85797 /* WatchingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34171EFE652000E85797 /* WatchingRouter.swift */; };
+		345F34381EFE653A00E85797 /* AuthenticationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34231EFE653A00E85797 /* AuthenticationParameter.swift */; };
+		345F34391EFE653A00E85797 /* EventsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34241EFE653A00E85797 /* EventsParameter.swift */; };
+		345F343A1EFE653A00E85797 /* GistsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34251EFE653A00E85797 /* GistsParameter.swift */; };
+		345F343B1EFE653A00E85797 /* GitParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34261EFE653A00E85797 /* GitParameter.swift */; };
+		345F343C1EFE653A00E85797 /* IssuesParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34271EFE653A00E85797 /* IssuesParameter.swift */; };
+		345F343D1EFE653A00E85797 /* NotificationsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34281EFE653A00E85797 /* NotificationsParameter.swift */; };
+		345F343E1EFE653A00E85797 /* IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F342A1EFE653A00E85797 /* IdentifiableType.swift */; };
+		345F343F1EFE653A00E85797 /* OrganizationOwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F342B1EFE653A00E85797 /* OrganizationOwnerType.swift */; };
+		345F34401EFE653A00E85797 /* OwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F342C1EFE653A00E85797 /* OwnerType.swift */; };
+		345F34411EFE653A00E85797 /* PaginationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F342D1EFE653A00E85797 /* PaginationType.swift */; };
+		345F34421EFE653A00E85797 /* RepositoryOwnerNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F342E1EFE653A00E85797 /* RepositoryOwnerNumberType.swift */; };
+		345F34431EFE653A00E85797 /* RepositoryOwnerPathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F342F1EFE653A00E85797 /* RepositoryOwnerPathType.swift */; };
+		345F34441EFE653A00E85797 /* RepositoryOwnerRefType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34301EFE653A00E85797 /* RepositoryOwnerRefType.swift */; };
+		345F34451EFE653A00E85797 /* RepositoryOwnerSHAType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34311EFE653A00E85797 /* RepositoryOwnerSHAType.swift */; };
+		345F34461EFE653A00E85797 /* RepositoryOwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34321EFE653A00E85797 /* RepositoryOwnerType.swift */; };
+		345F34471EFE653A00E85797 /* TimelineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34331EFE653A00E85797 /* TimelineType.swift */; };
+		345F34481EFE653A00E85797 /* RepositoriesParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34341EFE653A00E85797 /* RepositoriesParameter.swift */; };
+		345F34491EFE653A00E85797 /* SearchParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34351EFE653A00E85797 /* SearchParameter.swift */; };
+		345F344A1EFE653A00E85797 /* UsersParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34361EFE653A00E85797 /* UsersParameter.swift */; };
+		345F344B1EFE653A00E85797 /* WatchParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34371EFE653A00E85797 /* WatchParameter.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +178,36 @@
 		345F33B21EFE4ED900E85797 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		345F33B41EFE4ED900E85797 /* RepositoriesSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesSearchResult.swift; sourceTree = "<group>"; };
 		345F33FB1EFE4F4B00E85797 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		345F340E1EFE652000E85797 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
+		345F340F1EFE652000E85797 /* EventsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsRouter.swift; sourceTree = "<group>"; };
+		345F34101EFE652000E85797 /* GistsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistsRouter.swift; sourceTree = "<group>"; };
+		345F34111EFE652000E85797 /* GitRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitRouter.swift; sourceTree = "<group>"; };
+		345F34121EFE652000E85797 /* IssuesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesRouter.swift; sourceTree = "<group>"; };
+		345F34131EFE652000E85797 /* NotificationsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRouter.swift; sourceTree = "<group>"; };
+		345F34141EFE652000E85797 /* RepositoriesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesRouter.swift; sourceTree = "<group>"; };
+		345F34151EFE652000E85797 /* SearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		345F34161EFE652000E85797 /* UsersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
+		345F34171EFE652000E85797 /* WatchingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchingRouter.swift; sourceTree = "<group>"; };
+		345F34231EFE653A00E85797 /* AuthenticationParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationParameter.swift; sourceTree = "<group>"; };
+		345F34241EFE653A00E85797 /* EventsParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsParameter.swift; sourceTree = "<group>"; };
+		345F34251EFE653A00E85797 /* GistsParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistsParameter.swift; sourceTree = "<group>"; };
+		345F34261EFE653A00E85797 /* GitParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitParameter.swift; sourceTree = "<group>"; };
+		345F34271EFE653A00E85797 /* IssuesParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesParameter.swift; sourceTree = "<group>"; };
+		345F34281EFE653A00E85797 /* NotificationsParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsParameter.swift; sourceTree = "<group>"; };
+		345F342A1EFE653A00E85797 /* IdentifiableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiableType.swift; sourceTree = "<group>"; };
+		345F342B1EFE653A00E85797 /* OrganizationOwnerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationOwnerType.swift; sourceTree = "<group>"; };
+		345F342C1EFE653A00E85797 /* OwnerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerType.swift; sourceTree = "<group>"; };
+		345F342D1EFE653A00E85797 /* PaginationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationType.swift; sourceTree = "<group>"; };
+		345F342E1EFE653A00E85797 /* RepositoryOwnerNumberType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryOwnerNumberType.swift; sourceTree = "<group>"; };
+		345F342F1EFE653A00E85797 /* RepositoryOwnerPathType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryOwnerPathType.swift; sourceTree = "<group>"; };
+		345F34301EFE653A00E85797 /* RepositoryOwnerRefType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryOwnerRefType.swift; sourceTree = "<group>"; };
+		345F34311EFE653A00E85797 /* RepositoryOwnerSHAType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryOwnerSHAType.swift; sourceTree = "<group>"; };
+		345F34321EFE653A00E85797 /* RepositoryOwnerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryOwnerType.swift; sourceTree = "<group>"; };
+		345F34331EFE653A00E85797 /* TimelineType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineType.swift; sourceTree = "<group>"; };
+		345F34341EFE653A00E85797 /* RepositoriesParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesParameter.swift; sourceTree = "<group>"; };
+		345F34351EFE653A00E85797 /* SearchParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParameter.swift; sourceTree = "<group>"; };
+		345F34361EFE653A00E85797 /* UsersParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersParameter.swift; sourceTree = "<group>"; };
+		345F34371EFE653A00E85797 /* WatchParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchParameter.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
 		C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,7 +249,6 @@
 				345F33601EFE4ED900E85797 /* Activity */,
 				345F33611EFE4ED900E85797 /* Authentication */,
 				345F33641EFE4ED900E85797 /* Base Models */,
-				345F33681EFE4ED900E85797 /* Client */,
 				345F33691EFE4ED900E85797 /* Commits */,
 				345F336E1EFE4ED900E85797 /* Entities */,
 				345F33761EFE4ED900E85797 /* Events */,
@@ -198,9 +257,11 @@
 				345F338E1EFE4ED900E85797 /* Git Data */,
 				345F339A1EFE4ED900E85797 /* Issues */,
 				345F339F1EFE4ED900E85797 /* Notifications */,
+				345F34221EFE653A00E85797 /* Parameters */,
 				345F33A21EFE4ED900E85797 /* Public Keys */,
 				345F33A41EFE4ED900E85797 /* Pull Requests */,
 				345F33A81EFE4ED900E85797 /* Repositories */,
+				345F340D1EFE652000E85797 /* Routers */,
 				345F33B31EFE4ED900E85797 /* Search */,
 				345F33FA1EFE4F4B00E85797 /* Server */,
 				345F33B71EFE4ED900E85797 /* Watching */,
@@ -233,13 +294,6 @@
 				345F33671EFE4ED900E85797 /* ReviewComment.swift */,
 			);
 			path = "Base Models";
-			sourceTree = "<group>";
-		};
-		345F33681EFE4ED900E85797 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Client;
 			sourceTree = "<group>";
 		};
 		345F33691EFE4ED900E85797 /* Commits */ = {
@@ -433,6 +487,58 @@
 			path = Server;
 			sourceTree = "<group>";
 		};
+		345F340D1EFE652000E85797 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				345F340E1EFE652000E85797 /* AuthenticationRouter.swift */,
+				345F340F1EFE652000E85797 /* EventsRouter.swift */,
+				345F34101EFE652000E85797 /* GistsRouter.swift */,
+				345F34111EFE652000E85797 /* GitRouter.swift */,
+				345F34121EFE652000E85797 /* IssuesRouter.swift */,
+				345F34131EFE652000E85797 /* NotificationsRouter.swift */,
+				345F34141EFE652000E85797 /* RepositoriesRouter.swift */,
+				345F34151EFE652000E85797 /* SearchRouter.swift */,
+				345F34161EFE652000E85797 /* UsersRouter.swift */,
+				345F34171EFE652000E85797 /* WatchingRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		345F34221EFE653A00E85797 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				345F34231EFE653A00E85797 /* AuthenticationParameter.swift */,
+				345F34241EFE653A00E85797 /* EventsParameter.swift */,
+				345F34251EFE653A00E85797 /* GistsParameter.swift */,
+				345F34261EFE653A00E85797 /* GitParameter.swift */,
+				345F34271EFE653A00E85797 /* IssuesParameter.swift */,
+				345F34281EFE653A00E85797 /* NotificationsParameter.swift */,
+				345F34291EFE653A00E85797 /* Parameter Protocols */,
+				345F34341EFE653A00E85797 /* RepositoriesParameter.swift */,
+				345F34351EFE653A00E85797 /* SearchParameter.swift */,
+				345F34361EFE653A00E85797 /* UsersParameter.swift */,
+				345F34371EFE653A00E85797 /* WatchParameter.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		345F34291EFE653A00E85797 /* Parameter Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				345F342A1EFE653A00E85797 /* IdentifiableType.swift */,
+				345F342B1EFE653A00E85797 /* OrganizationOwnerType.swift */,
+				345F342C1EFE653A00E85797 /* OwnerType.swift */,
+				345F342D1EFE653A00E85797 /* PaginationType.swift */,
+				345F342E1EFE653A00E85797 /* RepositoryOwnerNumberType.swift */,
+				345F342F1EFE653A00E85797 /* RepositoryOwnerPathType.swift */,
+				345F34301EFE653A00E85797 /* RepositoryOwnerRefType.swift */,
+				345F34311EFE653A00E85797 /* RepositoryOwnerSHAType.swift */,
+				345F34321EFE653A00E85797 /* RepositoryOwnerType.swift */,
+				345F34331EFE653A00E85797 /* TimelineType.swift */,
+			);
+			path = "Parameter Protocols";
+			sourceTree = "<group>";
+		};
 		53ABB221CE4FDCE47758B0E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,40 +678,60 @@
 				345F33E01EFE4ED900E85797 /* ContentTreeEntry.swift in Sources */,
 				345F33CE1EFE4ED900E85797 /* MemberEvent.swift in Sources */,
 				345F33C31EFE4ED900E85797 /* Team.swift in Sources */,
+				345F344A1EFE653A00E85797 /* UsersParameter.swift in Sources */,
 				345F33DE1EFE4ED900E85797 /* BlobTreeEntry.swift in Sources */,
+				345F34381EFE653A00E85797 /* AuthenticationParameter.swift in Sources */,
 				345F33BC1EFE4ED900E85797 /* ReviewComment.swift in Sources */,
+				345F34211EFE652000E85797 /* WatchingRouter.swift in Sources */,
 				345F33BD1EFE4ED900E85797 /* CommitCombinedStatus.swift in Sources */,
 				345F33C21EFE4ED900E85797 /* Organization.swift in Sources */,
 				345F33D21EFE4ED900E85797 /* PushEvent.swift in Sources */,
 				345F33ED1EFE4ED900E85797 /* PullRequestComment.swift in Sources */,
 				345F33EF1EFE4ED900E85797 /* Branch.swift in Sources */,
+				345F34421EFE653A00E85797 /* RepositoryOwnerNumberType.swift in Sources */,
 				345F33F01EFE4ED900E85797 /* Content.swift in Sources */,
+				345F341D1EFE652000E85797 /* NotificationsRouter.swift in Sources */,
+				345F343B1EFE653A00E85797 /* GitParameter.swift in Sources */,
 				345F33E51EFE4ED900E85797 /* ClientIssueState.swift in Sources */,
 				345F33F81EFE4ED900E85797 /* RepositoriesSearchResult.swift in Sources */,
 				345F33D61EFE4ED900E85797 /* WatchEvent.swift in Sources */,
 				345F33C41EFE4ED900E85797 /* Plan.swift in Sources */,
 				345F33E31EFE4ED900E85797 /* TreeEntryType.swift in Sources */,
 				345F33F11EFE4ED900E85797 /* ContentType.swift in Sources */,
+				345F341C1EFE652000E85797 /* IssuesRouter.swift in Sources */,
 				345F33EA1EFE4ED900E85797 /* NotificationType.swift in Sources */,
+				345F34181EFE652000E85797 /* AuthenticationRouter.swift in Sources */,
+				345F34191EFE652000E85797 /* EventsRouter.swift in Sources */,
+				345F34471EFE653A00E85797 /* TimelineType.swift in Sources */,
 				345F33EC1EFE4ED900E85797 /* PullRequest.swift in Sources */,
 				345F33E91EFE4ED900E85797 /* Notification.swift in Sources */,
 				345F33D11EFE4ED900E85797 /* PullRequestEvent.swift in Sources */,
 				345F33E61EFE4ED900E85797 /* Issue.swift in Sources */,
 				345F33BF1EFE4ED900E85797 /* CommitStatus.swift in Sources */,
+				345F34461EFE653A00E85797 /* RepositoryOwnerType.swift in Sources */,
 				345F33C51EFE4ED900E85797 /* User.swift in Sources */,
+				345F34481EFE653A00E85797 /* RepositoriesParameter.swift in Sources */,
 				345F33FC1EFE4F4B00E85797 /* Server.swift in Sources */,
+				345F343F1EFE653A00E85797 /* OrganizationOwnerType.swift in Sources */,
+				345F341E1EFE652000E85797 /* RepositoriesRouter.swift in Sources */,
 				345F33C71EFE4ED900E85797 /* Event.swift in Sources */,
+				345F34451EFE653A00E85797 /* RepositoryOwnerSHAType.swift in Sources */,
+				345F343E1EFE653A00E85797 /* IdentifiableType.swift in Sources */,
 				345F33DD1EFE4ED900E85797 /* Ref.swift in Sources */,
 				345F33DC1EFE4ED900E85797 /* Commit.swift in Sources */,
 				345F33B81EFE4ED900E85797 /* AccessToken.swift in Sources */,
 				345F33D01EFE4ED900E85797 /* PullRequestCommentEvent.swift in Sources */,
+				345F34491EFE653A00E85797 /* SearchParameter.swift in Sources */,
 				345F33E71EFE4ED900E85797 /* IssueComment.swift in Sources */,
 				345F33E11EFE4ED900E85797 /* TreeEntry.swift in Sources */,
 				345F33D41EFE4ED900E85797 /* RefEventType.swift in Sources */,
+				345F34391EFE653A00E85797 /* EventsParameter.swift in Sources */,
 				345F33EE1EFE4ED900E85797 /* PullRequestState.swift in Sources */,
 				345F33CA1EFE4ED900E85797 /* IssueAction.swift in Sources */,
 				345F33BA1EFE4ED900E85797 /* Comment.swift in Sources */,
 				345F33CB1EFE4ED900E85797 /* IssueCommentEvent.swift in Sources */,
+				345F341B1EFE652000E85797 /* GitRouter.swift in Sources */,
+				345F343A1EFE653A00E85797 /* GistsParameter.swift in Sources */,
 				345F33F21EFE4ED900E85797 /* DirectoryContent.swift in Sources */,
 				345F33E21EFE4ED900E85797 /* TreeEntryMode.swift in Sources */,
 				345F33CC1EFE4ED900E85797 /* IssueEvent.swift in Sources */,
@@ -613,20 +739,30 @@
 				345F33F71EFE4ED900E85797 /* Repository.swift in Sources */,
 				345F33F31EFE4ED900E85797 /* FileContent.swift in Sources */,
 				345F33C81EFE4ED900E85797 /* EventType.swift in Sources */,
+				345F34411EFE653A00E85797 /* PaginationType.swift in Sources */,
 				345F33BE1EFE4ED900E85797 /* CommitComment.swift in Sources */,
 				345F33DB1EFE4ED900E85797 /* Blob.swift in Sources */,
+				345F344B1EFE653A00E85797 /* WatchParameter.swift in Sources */,
+				345F343C1EFE653A00E85797 /* IssuesParameter.swift in Sources */,
+				345F341A1EFE652000E85797 /* GistsRouter.swift in Sources */,
 				345F33C11EFE4ED900E85797 /* Entity.swift in Sources */,
+				345F34201EFE652000E85797 /* UsersRouter.swift in Sources */,
+				345F341F1EFE652000E85797 /* SearchRouter.swift in Sources */,
+				345F343D1EFE653A00E85797 /* NotificationsParameter.swift in Sources */,
 				345F33BB1EFE4ED900E85797 /* Object.swift in Sources */,
 				345F33D91EFE4ED900E85797 /* GistFile.swift in Sources */,
 				345F33C01EFE4ED900E85797 /* GitCommit.swift in Sources */,
 				345F33CD1EFE4ED900E85797 /* MemberAction.swift in Sources */,
 				345F33CF1EFE4ED900E85797 /* PublicEvent.swift in Sources */,
 				345F33D71EFE4ED900E85797 /* Gist.swift in Sources */,
+				345F34441EFE653A00E85797 /* RepositoryOwnerRefType.swift in Sources */,
 				345F33EB1EFE4ED900E85797 /* PublicKey.swift in Sources */,
 				345F33DA1EFE4ED900E85797 /* GistFileEdit.swift in Sources */,
 				345F33E81EFE4ED900E85797 /* IssueState.swift in Sources */,
 				345F33D51EFE4ED900E85797 /* RefType.swift in Sources */,
 				345F33F61EFE4ED900E85797 /* GitCommitFile.swift in Sources */,
+				345F34431EFE653A00E85797 /* RepositoryOwnerPathType.swift in Sources */,
+				345F34401EFE653A00E85797 /* OwnerType.swift in Sources */,
 				345F33F41EFE4ED900E85797 /* SubmoduleContent.swift in Sources */,
 				345F33C91EFE4ED900E85797 /* ForkEvent.swift in Sources */,
 				345F33B91EFE4ED900E85797 /* Authorization.swift in Sources */,
