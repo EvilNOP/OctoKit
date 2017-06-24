@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		345E60A81EFE3E8400ACF7A3 /* OctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 345E60A61EFE3E8400ACF7A3 /* OctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E60A31EFE3E8400ACF7A3 /* OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E60A61EFE3E8400ACF7A3 /* OctoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctoKit.h; sourceTree = "<group>"; };
 		345E60A71EFE3E8400ACF7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
+		C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +37,8 @@
 			children = (
 				345E60A51EFE3E8400ACF7A3 /* OctoKit */,
 				345E60A41EFE3E8400ACF7A3 /* Products */,
+				53ABB221CE4FDCE47758B0E6 /* Pods */,
+				73880C54711438FCC9311170 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +59,23 @@
 			path = OctoKit;
 			sourceTree = "<group>";
 		};
+		53ABB221CE4FDCE47758B0E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */,
+				4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		73880C54711438FCC9311170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -70,10 +94,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 345E60AB1EFE3E8400ACF7A3 /* Build configuration list for PBXNativeTarget "OctoKit" */;
 			buildPhases = (
+				10E42A1101713F1284E02D22 /* [CP] Check Pods Manifest.lock */,
 				345E609E1EFE3E8400ACF7A3 /* Sources */,
 				345E609F1EFE3E8400ACF7A3 /* Frameworks */,
 				345E60A01EFE3E8400ACF7A3 /* Headers */,
 				345E60A11EFE3E8400ACF7A3 /* Resources */,
+				2D4106A8E5F6715FC19EE125 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +152,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10E42A1101713F1284E02D22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D4106A8E5F6715FC19EE125 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		345E609E1EFE3E8400ACF7A3 /* Sources */ = {
@@ -241,6 +300,7 @@
 		};
 		345E60AC1EFE3E8400ACF7A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -260,6 +320,7 @@
 		};
 		345E60AD1EFE3E8400ACF7A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
