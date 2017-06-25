@@ -109,11 +109,16 @@
 		345F34661EFEA38F00E85797 /* Bundle+ResourcesAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34631EFEA38F00E85797 /* Bundle+ResourcesAdditions.swift */; };
 		345F34671EFEA38F00E85797 /* MultiTarget+Mutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34641EFEA38F00E85797 /* MultiTarget+Mutable.swift */; };
 		345F34681EFEA38F00E85797 /* URLComponents+QueryAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F34651EFEA38F00E85797 /* URLComponents+QueryAdditions.swift */; };
-		34BB7A6F1EFEA6DE005BF84A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A6C1EFEA6DE005BF84A /* Client.swift */; };
-		34BB7A701EFEA6DE005BF84A /* RxPaginationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */; };
 		34BB7A751EFEA7E8005BF84A /* BasicAuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A721EFEA7E8005BF84A /* BasicAuthPlugin.swift */; };
 		34BB7A761EFEA7E8005BF84A /* ContentTypePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A731EFEA7E8005BF84A /* ContentTypePlugin.swift */; };
 		34BB7A771EFEA7E8005BF84A /* OAuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A741EFEA7E8005BF84A /* OAuthPlugin.swift */; };
+		34BB7A841EFF535B005BF84A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A791EFF535B005BF84A /* Client.swift */; };
+		34BB7A851EFF535B005BF84A /* ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A7B1EFF535B005BF84A /* ClientError.swift */; };
+		34BB7A861EFF535B005BF84A /* ClientErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A7C1EFF535B005BF84A /* ClientErrorEntity.swift */; };
+		34BB7A871EFF535B005BF84A /* ErrorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A7D1EFF535B005BF84A /* ErrorObject.swift */; };
+		34BB7A881EFF535B005BF84A /* Response+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A7F1EFF535B005BF84A /* Response+Validation.swift */; };
+		34BB7A891EFF535B005BF84A /* Observable+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A811EFF535B005BF84A /* Observable+Validation.swift */; };
+		34BB7A8A1EFF535B005BF84A /* RxPaginationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A831EFF535B005BF84A /* RxPaginationProvider.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -223,11 +228,16 @@
 		345F34631EFEA38F00E85797 /* Bundle+ResourcesAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+ResourcesAdditions.swift"; sourceTree = "<group>"; };
 		345F34641EFEA38F00E85797 /* MultiTarget+Mutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MultiTarget+Mutable.swift"; sourceTree = "<group>"; };
 		345F34651EFEA38F00E85797 /* URLComponents+QueryAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLComponents+QueryAdditions.swift"; sourceTree = "<group>"; };
-		34BB7A6C1EFEA6DE005BF84A /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPaginationProvider.swift; sourceTree = "<group>"; };
 		34BB7A721EFEA7E8005BF84A /* BasicAuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAuthPlugin.swift; sourceTree = "<group>"; };
 		34BB7A731EFEA7E8005BF84A /* ContentTypePlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTypePlugin.swift; sourceTree = "<group>"; };
 		34BB7A741EFEA7E8005BF84A /* OAuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthPlugin.swift; sourceTree = "<group>"; };
+		34BB7A791EFF535B005BF84A /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		34BB7A7B1EFF535B005BF84A /* ClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientError.swift; sourceTree = "<group>"; };
+		34BB7A7C1EFF535B005BF84A /* ClientErrorEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientErrorEntity.swift; sourceTree = "<group>"; };
+		34BB7A7D1EFF535B005BF84A /* ErrorObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorObject.swift; sourceTree = "<group>"; };
+		34BB7A7F1EFF535B005BF84A /* Response+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Validation.swift"; sourceTree = "<group>"; };
+		34BB7A811EFF535B005BF84A /* Observable+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Validation.swift"; sourceTree = "<group>"; };
+		34BB7A831EFF535B005BF84A /* RxPaginationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPaginationProvider.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
 		C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,7 +279,7 @@
 				345F33601EFE4ED900E85797 /* Activity */,
 				345F33611EFE4ED900E85797 /* Authentication */,
 				345F33641EFE4ED900E85797 /* Base Models */,
-				34BB7A6B1EFEA6DE005BF84A /* Client */,
+				34BB7A781EFF535B005BF84A /* Client */,
 				345F33691EFE4ED900E85797 /* Commits */,
 				345F336E1EFE4ED900E85797 /* Entities */,
 				345F33761EFE4ED900E85797 /* Events */,
@@ -574,23 +584,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		34BB7A6B1EFEA6DE005BF84A /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				34BB7A6C1EFEA6DE005BF84A /* Client.swift */,
-				34BB7A6D1EFEA6DE005BF84A /* Provider */,
-			);
-			path = Client;
-			sourceTree = "<group>";
-		};
-		34BB7A6D1EFEA6DE005BF84A /* Provider */ = {
-			isa = PBXGroup;
-			children = (
-				34BB7A6E1EFEA6DE005BF84A /* RxPaginationProvider.swift */,
-			);
-			path = Provider;
-			sourceTree = "<group>";
-		};
 		34BB7A711EFEA7E8005BF84A /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +592,52 @@
 				34BB7A741EFEA7E8005BF84A /* OAuthPlugin.swift */,
 			);
 			path = Plugins;
+			sourceTree = "<group>";
+		};
+		34BB7A781EFF535B005BF84A /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A791EFF535B005BF84A /* Client.swift */,
+				34BB7A7A1EFF535B005BF84A /* Error */,
+				34BB7A821EFF535B005BF84A /* Provider */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		34BB7A7A1EFF535B005BF84A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A7B1EFF535B005BF84A /* ClientError.swift */,
+				34BB7A7C1EFF535B005BF84A /* ClientErrorEntity.swift */,
+				34BB7A7D1EFF535B005BF84A /* ErrorObject.swift */,
+				34BB7A7E1EFF535B005BF84A /* Validation */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		34BB7A7E1EFF535B005BF84A /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A7F1EFF535B005BF84A /* Response+Validation.swift */,
+				34BB7A801EFF535B005BF84A /* RxSwift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		34BB7A801EFF535B005BF84A /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A811EFF535B005BF84A /* Observable+Validation.swift */,
+			);
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		34BB7A821EFF535B005BF84A /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				34BB7A831EFF535B005BF84A /* RxPaginationProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		53ABB221CE4FDCE47758B0E6 /* Pods */ = {
@@ -741,6 +780,7 @@
 				345F33CE1EFE4ED900E85797 /* MemberEvent.swift in Sources */,
 				345F33C31EFE4ED900E85797 /* Team.swift in Sources */,
 				345F344A1EFE653A00E85797 /* UsersParameter.swift in Sources */,
+				34BB7A841EFF535B005BF84A /* Client.swift in Sources */,
 				345F33DE1EFE4ED900E85797 /* BlobTreeEntry.swift in Sources */,
 				345F34381EFE653A00E85797 /* AuthenticationParameter.swift in Sources */,
 				345F33BC1EFE4ED900E85797 /* ReviewComment.swift in Sources */,
@@ -769,6 +809,7 @@
 				345F33EC1EFE4ED900E85797 /* PullRequest.swift in Sources */,
 				345F33E91EFE4ED900E85797 /* Notification.swift in Sources */,
 				345F33D11EFE4ED900E85797 /* PullRequestEvent.swift in Sources */,
+				34BB7A8A1EFF535B005BF84A /* RxPaginationProvider.swift in Sources */,
 				345F33E61EFE4ED900E85797 /* Issue.swift in Sources */,
 				345F345A1EFE6CD300E85797 /* PageableType.swift in Sources */,
 				345F33BF1EFE4ED900E85797 /* CommitStatus.swift in Sources */,
@@ -796,7 +837,6 @@
 				34BB7A761EFEA7E8005BF84A /* ContentTypePlugin.swift in Sources */,
 				345F34591EFE6CD300E85797 /* MutableType.swift in Sources */,
 				345F33CB1EFE4ED900E85797 /* IssueCommentEvent.swift in Sources */,
-				34BB7A6F1EFEA6DE005BF84A /* Client.swift in Sources */,
 				345F341B1EFE652000E85797 /* GitRouter.swift in Sources */,
 				345F343A1EFE653A00E85797 /* GistsParameter.swift in Sources */,
 				345F33F21EFE4ED900E85797 /* DirectoryContent.swift in Sources */,
@@ -806,6 +846,7 @@
 				345F33F71EFE4ED900E85797 /* Repository.swift in Sources */,
 				345F33F31EFE4ED900E85797 /* FileContent.swift in Sources */,
 				345F33C81EFE4ED900E85797 /* EventType.swift in Sources */,
+				34BB7A861EFF535B005BF84A /* ClientErrorEntity.swift in Sources */,
 				345F34411EFE653A00E85797 /* PaginationType.swift in Sources */,
 				345F33BE1EFE4ED900E85797 /* CommitComment.swift in Sources */,
 				345F33DB1EFE4ED900E85797 /* Blob.swift in Sources */,
@@ -814,12 +855,16 @@
 				345F343C1EFE653A00E85797 /* IssuesParameter.swift in Sources */,
 				345F341A1EFE652000E85797 /* GistsRouter.swift in Sources */,
 				345F33C11EFE4ED900E85797 /* Entity.swift in Sources */,
+				34BB7A851EFF535B005BF84A /* ClientError.swift in Sources */,
 				345F34201EFE652000E85797 /* UsersRouter.swift in Sources */,
 				345F341F1EFE652000E85797 /* SearchRouter.swift in Sources */,
+				34BB7A881EFF535B005BF84A /* Response+Validation.swift in Sources */,
 				345F343D1EFE653A00E85797 /* NotificationsParameter.swift in Sources */,
 				345F33BB1EFE4ED900E85797 /* Object.swift in Sources */,
 				345F33D91EFE4ED900E85797 /* GistFile.swift in Sources */,
 				345F33C01EFE4ED900E85797 /* GitCommit.swift in Sources */,
+				34BB7A871EFF535B005BF84A /* ErrorObject.swift in Sources */,
+				34BB7A891EFF535B005BF84A /* Observable+Validation.swift in Sources */,
 				345F34671EFEA38F00E85797 /* MultiTarget+Mutable.swift in Sources */,
 				345F34661EFEA38F00E85797 /* Bundle+ResourcesAdditions.swift in Sources */,
 				345F33CD1EFE4ED900E85797 /* MemberAction.swift in Sources */,
@@ -832,7 +877,6 @@
 				345F33E81EFE4ED900E85797 /* IssueState.swift in Sources */,
 				345F33D51EFE4ED900E85797 /* RefType.swift in Sources */,
 				345F33F61EFE4ED900E85797 /* GitCommitFile.swift in Sources */,
-				34BB7A701EFEA6DE005BF84A /* RxPaginationProvider.swift in Sources */,
 				345F34431EFE653A00E85797 /* RepositoryOwnerPathType.swift in Sources */,
 				345F34401EFE653A00E85797 /* OwnerType.swift in Sources */,
 				345F33F41EFE4ED900E85797 /* SubmoduleContent.swift in Sources */,
