@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		34263AE31EFFCC1100E84B94 /* Client+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34263AE21EFFCC1100E84B94 /* Client+User.swift */; };
 		345B97FA1EFFDD2A0083964E /* Client+Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B97F91EFFDD2A0083964E /* Client+Activity.swift */; };
+		345B97FC1EFFF06D0083964E /* Client+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B97FB1EFFF06D0083964E /* Client+Events.swift */; };
 		345E60A81EFE3E8400ACF7A3 /* OctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 345E60A61EFE3E8400ACF7A3 /* OctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		345F33B81EFE4ED900E85797 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33621EFE4ED900E85797 /* AccessToken.swift */; };
 		345F33B91EFE4ED900E85797 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33631EFE4ED900E85797 /* Authorization.swift */; };
@@ -130,6 +131,7 @@
 		2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34263AE21EFFCC1100E84B94 /* Client+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+User.swift"; sourceTree = "<group>"; };
 		345B97F91EFFDD2A0083964E /* Client+Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Activity.swift"; sourceTree = "<group>"; };
+		345B97FB1EFFF06D0083964E /* Client+Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Events.swift"; sourceTree = "<group>"; };
 		345E60A31EFE3E8400ACF7A3 /* OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E60A61EFE3E8400ACF7A3 /* OctoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctoKit.h; sourceTree = "<group>"; };
 		345E60A71EFE3E8400ACF7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 		345F33761EFE4ED900E85797 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				345B97FB1EFFF06D0083964E /* Client+Events.swift */,
 				345F33771EFE4ED900E85797 /* CommitCommentEvent.swift */,
 				345F33781EFE4ED900E85797 /* Event.swift */,
 				345F33791EFE4ED900E85797 /* EventType.swift */,
@@ -805,6 +808,7 @@
 				345F33EF1EFE4ED900E85797 /* Branch.swift in Sources */,
 				345F34421EFE653A00E85797 /* RepositoryOwnerNumberType.swift in Sources */,
 				345F33F01EFE4ED900E85797 /* Content.swift in Sources */,
+				345B97FC1EFFF06D0083964E /* Client+Events.swift in Sources */,
 				345F341D1EFE652000E85797 /* NotificationsRouter.swift in Sources */,
 				345F343B1EFE653A00E85797 /* GitParameter.swift in Sources */,
 				345F33E51EFE4ED900E85797 /* ClientIssueState.swift in Sources */,
