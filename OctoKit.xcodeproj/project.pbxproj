@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34263AE31EFFCC1100E84B94 /* Client+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34263AE21EFFCC1100E84B94 /* Client+User.swift */; };
 		345E60A81EFE3E8400ACF7A3 /* OctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 345E60A61EFE3E8400ACF7A3 /* OctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		345F33B81EFE4ED900E85797 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33621EFE4ED900E85797 /* AccessToken.swift */; };
 		345F33B91EFE4ED900E85797 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33631EFE4ED900E85797 /* Authorization.swift */; };
@@ -126,6 +127,7 @@
 
 /* Begin PBXFileReference section */
 		2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34263AE21EFFCC1100E84B94 /* Client+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+User.swift"; sourceTree = "<group>"; };
 		345E60A31EFE3E8400ACF7A3 /* OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E60A61EFE3E8400ACF7A3 /* OctoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctoKit.h; sourceTree = "<group>"; };
 		345E60A71EFE3E8400ACF7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				345F33751EFE4ED900E85797 /* User.swift */,
+				34263AE21EFFCC1100E84B94 /* Client+User.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -819,6 +822,7 @@
 				345F33FC1EFE4F4B00E85797 /* Server.swift in Sources */,
 				345F343F1EFE653A00E85797 /* OrganizationOwnerType.swift in Sources */,
 				345F341E1EFE652000E85797 /* RepositoriesRouter.swift in Sources */,
+				34263AE31EFFCC1100E84B94 /* Client+User.swift in Sources */,
 				345F33C71EFE4ED900E85797 /* Event.swift in Sources */,
 				345F34451EFE653A00E85797 /* RepositoryOwnerSHAType.swift in Sources */,
 				345F343E1EFE653A00E85797 /* IdentifiableType.swift in Sources */,
