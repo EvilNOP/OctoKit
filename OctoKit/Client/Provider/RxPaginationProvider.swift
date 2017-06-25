@@ -148,7 +148,7 @@ extension RxPaginationProvider: PageableType {
         let components = URLComponents(url: nextPageURL, resolvingAgainstBaseURL: false)
         
         if let pageNumberString = components?.queryValue(for: "page") {
-            print("Page number: \(pageNumberString)")
+            print("page number: \(pageNumberString)")
             return Int(pageNumberString)
         }
         
