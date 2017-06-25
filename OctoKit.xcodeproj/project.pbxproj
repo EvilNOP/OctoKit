@@ -10,6 +10,7 @@
 		34263AE31EFFCC1100E84B94 /* Client+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34263AE21EFFCC1100E84B94 /* Client+User.swift */; };
 		345B97FA1EFFDD2A0083964E /* Client+Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B97F91EFFDD2A0083964E /* Client+Activity.swift */; };
 		345B97FC1EFFF06D0083964E /* Client+Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B97FB1EFFF06D0083964E /* Client+Events.swift */; };
+		345B97FE1EFFF10A0083964E /* Client+Gists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345B97FD1EFFF10A0083964E /* Client+Gists.swift */; };
 		345E60A81EFE3E8400ACF7A3 /* OctoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 345E60A61EFE3E8400ACF7A3 /* OctoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		345F33B81EFE4ED900E85797 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33621EFE4ED900E85797 /* AccessToken.swift */; };
 		345F33B91EFE4ED900E85797 /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F33631EFE4ED900E85797 /* Authorization.swift */; };
@@ -132,6 +133,7 @@
 		34263AE21EFFCC1100E84B94 /* Client+User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+User.swift"; sourceTree = "<group>"; };
 		345B97F91EFFDD2A0083964E /* Client+Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Activity.swift"; sourceTree = "<group>"; };
 		345B97FB1EFFF06D0083964E /* Client+Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Events.swift"; sourceTree = "<group>"; };
+		345B97FD1EFFF10A0083964E /* Client+Gists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Gists.swift"; sourceTree = "<group>"; };
 		345E60A31EFE3E8400ACF7A3 /* OctoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		345E60A61EFE3E8400ACF7A3 /* OctoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctoKit.h; sourceTree = "<group>"; };
 		345E60A71EFE3E8400ACF7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				345F338B1EFE4ED900E85797 /* GistEdit.swift */,
 				345F338C1EFE4ED900E85797 /* GistFile.swift */,
 				345F338D1EFE4ED900E85797 /* GistFileEdit.swift */,
+				345B97FD1EFFF10A0083964E /* Client+Gists.swift */,
 			);
 			path = Gists;
 			sourceTree = "<group>";
@@ -822,6 +825,7 @@
 				345F34181EFE652000E85797 /* AuthenticationRouter.swift in Sources */,
 				345F34681EFEA38F00E85797 /* URLComponents+QueryAdditions.swift in Sources */,
 				345F34191EFE652000E85797 /* EventsRouter.swift in Sources */,
+				345B97FE1EFFF10A0083964E /* Client+Gists.swift in Sources */,
 				345F34471EFE653A00E85797 /* TimelineType.swift in Sources */,
 				345F33EC1EFE4ED900E85797 /* PullRequest.swift in Sources */,
 				345F33E91EFE4ED900E85797 /* Notification.swift in Sources */,
