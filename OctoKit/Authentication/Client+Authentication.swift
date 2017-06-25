@@ -38,8 +38,8 @@ extension Client {
                 
                 let components = URLComponents(url: callbackURL, resolvingAgainstBaseURL: false)
                 
-                if let state = components?.queryValue(forItemName: "state"), state == uuidString {
-                    if let code = components?.queryValue(forItemName: "code") {
+                if let state = components?.queryValue(for: "state"), state == uuidString {
+                    if let code = components?.queryValue(for: "code") {
                         oauthCode = code
                     }
                 }
