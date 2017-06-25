@@ -13,7 +13,77 @@ import ObjectMapper
 
 public class RxPaginationProvider<Target>: RxMoyaProvider<Target> where Target: TargetType {
 
+    // MARK: - Properties
     
+    private let disposeBag = DisposeBag()
+    
+    // MARK: - Requesting
+    
+    public func request<N: BaseMappable>(_ target: Target, fetchAllPages: Bool) -> Observable<N> {
+        return Observable<N>.create { [weak self] observer in
+            guard let strongSelf = self else {
+                observer.onCompleted()
+                
+                return Disposables.create()
+            }
+            
+            let cancellable = strongSelf.request(target) { result in
+                switch result {
+                case .success(let response):
+                    if response.statusCode == ClientNotModifiedStatusCode {
+                        // No change in the data.
+                        observer.onCompleted()
+                        
+                        return
+                    }
+                    
+                    var nextPageObject = Observable<N>.empty()
+                    
+                    if fetchAllPages, let httpURLResponse = response.response as? HTTPURLResponse {
+                        var newParameters = target.parameters
+                        
+                        if let nextPageNumber = strongSelf.nextPageNumber(from: httpURLResponse) {
+                            newParameters?["page"] = nextPageNumber
+                            
+                            var newTarget = target as! MultiTarget
+                            
+                            newTarget.withParameters(newParameters)
+                            
+                            nextPageObject = strongSelf.request(
+                                newTarget as! Target, fetchAllPages: fetchAllPages
+                            )
+                        }
+                    }
+                    
+                    let object = Observable<N>.create { observer in
+                        if let JSON = try? response.mapJSON() {
+                            if let array = JSON as? [[String : Any]] {
+                                for JSON in array {
+                                    if let object = Mapper<N>().map(JSON: JSON) {
+                                        observer.onNext(object)
+                                    } else {
+                                        observer.onError(MoyaError.jsonMapping(response))
+                                    }
+                                }
+                                
+                                observer.onCompleted()
+                            }
+                        }
+                        
+                        return Disposables.create()
+                    }
+                    
+                    object.concat(nextPageObject).subscribe(observer).addDisposableTo(strongSelf.disposeBag)
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            }
+            
+            return Disposables.create {
+                cancellable.cancel()
+            }
+        }
+    }
 }
 
 // MARK: - Pagination
