@@ -120,6 +120,7 @@
 		34BB7A891EFF535B005BF84A /* Observable+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A811EFF535B005BF84A /* Observable+Validation.swift */; };
 		34BB7A8A1EFF535B005BF84A /* RxPaginationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB7A831EFF535B005BF84A /* RxPaginationProvider.swift */; };
 		34D1B5A81EFF64E300018079 /* Client+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D1B5A71EFF64E300018079 /* Client+Authentication.swift */; };
+		34D1B5AA1EFF657D00018079 /* ClientAuthorizationScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D1B5A91EFF657D00018079 /* ClientAuthorizationScopes.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -240,6 +241,7 @@
 		34BB7A811EFF535B005BF84A /* Observable+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Validation.swift"; sourceTree = "<group>"; };
 		34BB7A831EFF535B005BF84A /* RxPaginationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxPaginationProvider.swift; sourceTree = "<group>"; };
 		34D1B5A71EFF64E300018079 /* Client+Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Authentication.swift"; sourceTree = "<group>"; };
+		34D1B5A91EFF657D00018079 /* ClientAuthorizationScopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientAuthorizationScopes.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
 		C6FA5DBA1122AF93FE93B217 /* Pods-OctoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -309,6 +311,7 @@
 			children = (
 				345F33621EFE4ED900E85797 /* AccessToken.swift */,
 				345F33631EFE4ED900E85797 /* Authorization.swift */,
+				34D1B5A91EFF657D00018079 /* ClientAuthorizationScopes.swift */,
 				34D1B5A71EFF64E300018079 /* Client+Authentication.swift */,
 			);
 			path = Authentication;
@@ -808,6 +811,7 @@
 				34BB7A8A1EFF535B005BF84A /* RxPaginationProvider.swift in Sources */,
 				345F33E61EFE4ED900E85797 /* Issue.swift in Sources */,
 				345F345A1EFE6CD300E85797 /* PageableType.swift in Sources */,
+				34D1B5AA1EFF657D00018079 /* ClientAuthorizationScopes.swift in Sources */,
 				345F33BF1EFE4ED900E85797 /* CommitStatus.swift in Sources */,
 				345F34461EFE653A00E85797 /* RepositoryOwnerType.swift in Sources */,
 				345F33C51EFE4ED900E85797 /* User.swift in Sources */,
