@@ -129,6 +129,7 @@
 		34CF46191F02386300D3E6B5 /* Client+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF46181F02386300D3E6B5 /* Client+Keys.swift */; };
 		34CF461B1F0266FC00D3E6B5 /* Client+Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF461A1F0266FC00D3E6B5 /* Client+Repositories.swift */; };
 		34CF461D1F02679400D3E6B5 /* Client+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF461C1F02679400D3E6B5 /* Client+Search.swift */; };
+		34CF46231F027C7100D3E6B5 /* Client+Watching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF46221F027C7100D3E6B5 /* Client+Watching.swift */; };
 		34D1B5A81EFF64E300018079 /* Client+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D1B5A71EFF64E300018079 /* Client+Authentication.swift */; };
 		34D1B5AA1EFF657D00018079 /* ClientAuthorizationScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D1B5A91EFF657D00018079 /* ClientAuthorizationScopes.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
@@ -260,6 +261,7 @@
 		34CF46181F02386300D3E6B5 /* Client+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Keys.swift"; sourceTree = "<group>"; };
 		34CF461A1F0266FC00D3E6B5 /* Client+Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Repositories.swift"; sourceTree = "<group>"; };
 		34CF461C1F02679400D3E6B5 /* Client+Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Search.swift"; sourceTree = "<group>"; };
+		34CF46221F027C7100D3E6B5 /* Client+Watching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Watching.swift"; sourceTree = "<group>"; };
 		34D1B5A71EFF64E300018079 /* Client+Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Authentication.swift"; sourceTree = "<group>"; };
 		34D1B5A91EFF657D00018079 /* ClientAuthorizationScopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientAuthorizationScopes.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -329,7 +331,7 @@
 				345F340D1EFE652000E85797 /* Routers */,
 				345F33B31EFE4ED900E85797 /* Search */,
 				345F33FA1EFE4F4B00E85797 /* Server */,
-				345F33B71EFE4ED900E85797 /* Watching */,
+				34CF46211F027C7100D3E6B5 /* Watching */,
 				345E60A71EFE3E8400ACF7A3 /* Info.plist */,
 			);
 			path = OctoKit;
@@ -534,13 +536,6 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		345F33B71EFE4ED900E85797 /* Watching */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Watching;
-			sourceTree = "<group>";
-		};
 		345F33FA1EFE4F4B00E85797 /* Server */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +669,14 @@
 				34BB7A831EFF535B005BF84A /* RxPaginationProvider.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		34CF46211F027C7100D3E6B5 /* Watching */ = {
+			isa = PBXGroup;
+			children = (
+				34CF46221F027C7100D3E6B5 /* Client+Watching.swift */,
+			);
+			path = Watching;
 			sourceTree = "<group>";
 		};
 		53ABB221CE4FDCE47758B0E6 /* Pods */ = {
@@ -931,6 +934,7 @@
 				345F33C91EFE4ED900E85797 /* ForkEvent.swift in Sources */,
 				345F33B91EFE4ED900E85797 /* Authorization.swift in Sources */,
 				345F33F51EFE4ED900E85797 /* SymlinkContent.swift in Sources */,
+				34CF46231F027C7100D3E6B5 /* Client+Watching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
