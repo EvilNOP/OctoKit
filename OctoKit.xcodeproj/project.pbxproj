@@ -127,6 +127,7 @@
 		34CF46151F007EEA00D3E6B5 /* Client+Issues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF46141F007EEA00D3E6B5 /* Client+Issues.swift */; };
 		34CF46171F02382900D3E6B5 /* Client+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF46161F02382900D3E6B5 /* Client+Notifications.swift */; };
 		34CF46191F02386300D3E6B5 /* Client+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF46181F02386300D3E6B5 /* Client+Keys.swift */; };
+		34CF461B1F0266FC00D3E6B5 /* Client+Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CF461A1F0266FC00D3E6B5 /* Client+Repositories.swift */; };
 		34D1B5A81EFF64E300018079 /* Client+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D1B5A71EFF64E300018079 /* Client+Authentication.swift */; };
 		34D1B5AA1EFF657D00018079 /* ClientAuthorizationScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D1B5A91EFF657D00018079 /* ClientAuthorizationScopes.swift */; };
 		3CF41BA14EA6329287973CF9 /* Pods_OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED8F52B67EA4D98C1B30E8C /* Pods_OctoKit.framework */; };
@@ -256,6 +257,7 @@
 		34CF46141F007EEA00D3E6B5 /* Client+Issues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Issues.swift"; sourceTree = "<group>"; };
 		34CF46161F02382900D3E6B5 /* Client+Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Notifications.swift"; sourceTree = "<group>"; };
 		34CF46181F02386300D3E6B5 /* Client+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Keys.swift"; sourceTree = "<group>"; };
+		34CF461A1F0266FC00D3E6B5 /* Client+Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Repositories.swift"; sourceTree = "<group>"; };
 		34D1B5A71EFF64E300018079 /* Client+Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Client+Authentication.swift"; sourceTree = "<group>"; };
 		34D1B5A91EFF657D00018079 /* ClientAuthorizationScopes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientAuthorizationScopes.swift; sourceTree = "<group>"; };
 		4BFAA07DA71DD1840A6FE6D1 /* Pods-OctoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctoKit/Pods-OctoKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -503,6 +505,7 @@
 				345F33AA1EFE4ED900E85797 /* Content */,
 				345F33B11EFE4ED900E85797 /* GitCommitFile.swift */,
 				345F33B21EFE4ED900E85797 /* Repository.swift */,
+				34CF461A1F0266FC00D3E6B5 /* Client+Repositories.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -870,6 +873,7 @@
 				345F34391EFE653A00E85797 /* EventsParameter.swift in Sources */,
 				345F33EE1EFE4ED900E85797 /* PullRequestState.swift in Sources */,
 				345F33CA1EFE4ED900E85797 /* IssueAction.swift in Sources */,
+				34CF461B1F0266FC00D3E6B5 /* Client+Repositories.swift in Sources */,
 				345F33BA1EFE4ED900E85797 /* Comment.swift in Sources */,
 				34BB7A761EFEA7E8005BF84A /* ContentTypePlugin.swift in Sources */,
 				345F34591EFE6CD300E85797 /* MutableType.swift in Sources */,
