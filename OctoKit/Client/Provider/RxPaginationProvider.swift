@@ -37,11 +37,13 @@ public class RxPaginationProvider<Target>: RxMoyaProvider<Target> where Target: 
                         return
                     }
                     
+                    // The next page observerable, an empty observerable denotes the last page.
                     var nextPageObject = Observable<N>.empty()
                     
                     if fetchAllPages, let httpURLResponse = response.response as? HTTPURLResponse {
                         var newParameters = target.parameters
                         
+                        // Change the page parameter value with next page number.
                         if let nextPageNumber = strongSelf.nextPageNumber(from: httpURLResponse) {
                             newParameters?["page"] = nextPageNumber
                             
@@ -55,6 +57,7 @@ public class RxPaginationProvider<Target>: RxMoyaProvider<Target> where Target: 
                         }
                     }
                     
+                    // An observerable carries `N`.
                     let object = Observable<N>.create { observer in
                         if let JSON = try? response.mapJSON() {
                             if let array = JSON as? [[String : Any]] {
@@ -73,6 +76,8 @@ public class RxPaginationProvider<Target>: RxMoyaProvider<Target> where Target: 
                         return Disposables.create()
                     }
                     
+                    // Concatenates `nextPageObject` and subscribes `observer` to
+                    // receive events for this sequence.
                     object.concat(nextPageObject).subscribe(observer).addDisposableTo(strongSelf.disposeBag)
                 case .failure(let error):
                     observer.onError(error)
