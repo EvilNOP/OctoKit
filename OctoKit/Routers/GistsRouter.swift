@@ -63,7 +63,7 @@ extension GistsRouter: TargetType {
         case .editGist(let gistEdit):
             return "/gists/\(gistEdit.id)"
         case .deleteGist(let gist):
-            return "/gists/\(gist.id)"
+            return "/gists/\(gist.gistID!)"
         }
     }
     
