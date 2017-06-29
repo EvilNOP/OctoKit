@@ -69,8 +69,9 @@ public class GistEdit: Mappable {
     
     // MARK: - Lifecycle
     
-    init(id: String, filesToModify: [String : GistFileEdit]?, filesToAdd: [GistFileEdit]?, filenamesToDelete: [String]?, description: String, isPublic: Bool) {
-        self.id = id
+    init(filesToModify: [String : GistFileEdit]?, filesToAdd: [GistFileEdit]?,
+         filenamesToDelete: [String]?, description: String? = nil, isPublic: Bool = false) {
+        self.id = ""
         self.filesToModify = filesToModify
         self.filesToAdd = filesToAdd
         self.filenamesToDelete = filenamesToDelete
@@ -96,10 +97,8 @@ public class GistEdit: Mappable {
                 if editJSON is NSNull {
                     fileChanges[filename] = NSNull()
                 } else {
-                    if editJSON is [String : Any] {
-                        if let edit = GistFileEdit(JSON: (editJSON as! [String : Any])) {
-                            fileChanges[filename] = edit
-                        }
+                    if let editJSON = editJSON as? [String : Any], let edit = GistFileEdit(JSON: editJSON) {
+                        fileChanges[filename] = edit
                     }
                 }
             }
@@ -115,8 +114,8 @@ public class GistEdit: Mappable {
             for (filename, edit) in fileChanges {
                 if edit is NSNull {
                     filesJSON[filename] = NSNull()
-                } else if edit is GistFileEdit {
-                    filesJSON[filename] = (edit as! GistFileEdit).toJSON()
+                } else if let edit = edit as? GistFileEdit {
+                    filesJSON[filename] = edit.toJSON()
                 }
             }
             
