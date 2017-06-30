@@ -45,7 +45,7 @@ public class GistEdit: Mappable {
     /// filenames will have an NSNull value.
     private var fileChanges: [String : Any]? {
         get {
-            var edits: [String : Any] = filesToModify ?? [ : ]
+            var edits: [String : Any] = filesToModify ?? [:]
             
             if filesToAdd != nil {
                 for edit in filesToAdd! where edit.filename != nil && edit.content != nil {
@@ -93,6 +93,18 @@ public class GistEdit: Mappable {
             
             var fileChanges: [String : Any] = [ : ]
             
+//          We have JSON like:
+//            "files": {
+//                "ring.erl": {
+//                    "size": 932,
+//                    "raw_url": "https://gist.githubusercontent.com/raw/365370/8c4d2d43d178df44f4c03a7f2ac0ff512853564e/ring.erl",
+//                    "type": "text/plain",
+//                    "language": "Erlang",
+//                    "truncated": false,
+//                    "content": "contents of gist"
+//                }
+//            }
+//          The following loop convert JSON to `[String : GistFileEdit]`.
             for (filename, editJSON) in filesJSON {
                 if let editJSON = editJSON as? [String : Any], let edit = GistFileEdit(JSON: editJSON) {
                     fileChanges[filename] = edit
@@ -107,6 +119,20 @@ public class GistEdit: Mappable {
             
             var filesJSON: [String : Any] = [ : ]
             
+//          The following loop convert `[String : Any]` to JSON like:
+//            {
+//                "file1.txt": {
+//                    "content": "updated file contents"
+//                },
+//                "old_name.txt": {
+//                    "filename": "new_name.txt",
+//                    "content": "modified contents"
+//                },
+//                "new_file.txt": {
+//                    "content": "a new file"
+//                },
+//                "delete_this_file.txt": null
+//            }
             for (filename, edit) in fileChanges {
                 if edit is NSNull {
                     filesJSON[filename] = NSNull()
@@ -128,10 +154,6 @@ public class GistEdit: Mappable {
 extension GistEdit: CustomStringConvertible {
     
     public var description: String {
-        guard let description = toJSONString(prettyPrint: true) else {
-            return ""
-        }
-        
-        return description
+        return toJSONString(prettyPrint: true) ?? ""
     }
 }
