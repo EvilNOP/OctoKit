@@ -79,8 +79,8 @@ public class GistEdit: Mappable {
         self.isPublic = isPublic
     }
     
-    public required init?(map: Map) {
-        return nil
+    public required convenience init?(map: Map) {
+        self.init(filesToModify: nil, filesToAdd: nil, filenamesToDelete: nil)
     }
     
     // MARK: - Mapping
