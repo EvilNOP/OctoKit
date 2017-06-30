@@ -22,20 +22,20 @@ public class GistFileEdit: Mappable {
     
     // MARK: - Lifecycle
     
-    public init(filename: String, content: String) {
+    public init(filename: String?, content: String?) {
         self.filename = filename
         self.content = content
     }
     
-    public required init?(map: Map) {
-        return nil
+    public required convenience init?(map: Map) {
+        self.init(filename: nil, content: nil)
     }
     
     // MARK: - Mapping
     
     public func mapping(map: Map) {
         filename <- map["filename"]
-        content <- map["content"]
+        content  <- map["content"]
     }
 }
 
