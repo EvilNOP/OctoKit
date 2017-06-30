@@ -34,7 +34,7 @@ public class GistEdit: Mappable {
     /// Whether this gist should be public.
     public internal(set) var isPublic: Bool?
     
-    private var fileChangesBackingValue: [String : Any]?
+    private var fileChangesBackingValue: [String : GistFileEdit]?
     
     // MARK: - Computed Properties
     
@@ -63,7 +63,7 @@ public class GistEdit: Mappable {
         }
         
         set(newFileChanges) {
-            fileChangesBackingValue = newFileChanges
+            fileChangesBackingValue = (newFileChanges as? [String : GistFileEdit])
         }
     }
     
