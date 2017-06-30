@@ -94,12 +94,8 @@ public class GistEdit: Mappable {
             var fileChanges: [String : Any] = [ : ]
             
             for (filename, editJSON) in filesJSON {
-                if editJSON is NSNull {
-                    fileChanges[filename] = NSNull()
-                } else {
-                    if let editJSON = editJSON as? [String : Any], let edit = GistFileEdit(JSON: editJSON) {
-                        fileChanges[filename] = edit
-                    }
+                if let editJSON = editJSON as? [String : Any], let edit = GistFileEdit(JSON: editJSON) {
+                    fileChanges[filename] = edit
                 }
             }
             
