@@ -69,9 +69,9 @@ public class GistEdit: Mappable {
     
     // MARK: - Lifecycle
     
-    public init(filesToModify: [String : GistFileEdit]?, filesToAdd: [GistFileEdit]?,
+    public init(id: String = "", filesToModify: [String : GistFileEdit]?, filesToAdd: [GistFileEdit]?,
                 filenamesToDelete: [String]?, description: String? = nil, isPublic: Bool? = nil) {
-        self.id = ""
+        self.id = id
         self.filesToModify = filesToModify
         self.filesToAdd = filesToAdd
         self.filenamesToDelete = filenamesToDelete
