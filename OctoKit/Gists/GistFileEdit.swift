@@ -43,10 +43,6 @@ public class GistFileEdit: Mappable {
 extension GistFileEdit: CustomStringConvertible {
     
     public var description: String {
-        guard let description = toJSONString(prettyPrint: true) else {
-            return ""
-        }
-        
-        return description
+        return toJSONString(prettyPrint: true) ?? ""
     }
 }
