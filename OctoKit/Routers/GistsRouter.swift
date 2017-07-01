@@ -87,7 +87,8 @@ extension GistsRouter: TargetType {
              .publicGists(let parameter):
             
             return parameter.toJSON()
-        case .createGist(let gistEdit):
+        case .createGist(let gistEdit),
+             .editGist(let gistEdit):
             return gistEdit.toJSON()
         default:
             return nil
