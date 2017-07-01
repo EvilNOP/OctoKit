@@ -8,6 +8,7 @@
 
 import Foundation
 import Moya
+import ObjectMapper
 
 enum EventsRouter {
     
@@ -61,5 +62,22 @@ extension EventsRouter: TargetType {
     
     var task: Task {
         return .request
+    }
+}
+
+// MARK: - MutableType
+extension EventsRouter: MutableType {
+    
+    mutating func withParameters(_ parameters: [String : Any]?) {
+        guard parameters != nil, let eventsParameter = Mapper<EventsParameter>().map(JSON: parameters!) else {
+            return
+        }
+        print("userReceivedEvents")
+        switch self {
+        case .userReceivedEvents:
+            self = .userReceivedEvents(eventsParameter)
+        case .userPerformedEvents:
+            self = .userPerformedEvents(eventsParameter)
+        }
     }
 }
