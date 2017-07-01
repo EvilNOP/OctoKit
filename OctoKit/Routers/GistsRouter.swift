@@ -113,6 +113,7 @@ extension GistsRouter: TargetType {
     }
 }
 
+// MARK: - MutableType
 extension GistsRouter: MutableType {
     
     mutating func withParameters(_ parameters: [String : Any]?) {
