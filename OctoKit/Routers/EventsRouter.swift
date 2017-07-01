@@ -72,7 +72,7 @@ extension EventsRouter: MutableType {
         guard parameters != nil, let eventsParameter = Mapper<EventsParameter>().map(JSON: parameters!) else {
             return
         }
-        print("userReceivedEvents")
+        
         switch self {
         case .userReceivedEvents:
             self = .userReceivedEvents(eventsParameter)
