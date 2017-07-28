@@ -184,21 +184,6 @@ public class Client {
         self.user = user
         self.token = token
     }
-    
-    // MARK: - Session Manager
-    
-    class func sessionManager(with contentType: String? = nil) -> Manager {
-        let configuration = URLSessionConfiguration.default
-        
-        var headers = Manager.defaultHTTPHeaders
-        
-        headers["User-Agent"] = userAgent
-        headers["Accept"] = contentType ?? StableContentType
-        
-        configuration.httpAdditionalHeaders = headers
-        
-        return Manager(configuration: configuration)
-    }
 }
 
 // MARK: - Moya Provider Enpoint Mapping
