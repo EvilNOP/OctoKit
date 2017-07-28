@@ -102,7 +102,7 @@ public class Client {
     /// All API requests through a MoyaProvider instance, passing in a value of your enum that
     /// specifies which endpoint you want to call.
     lazy var provider: RxPaginationProvider<MultiTarget> = {
-        let endpointClosure = self.mapping()
+        let endpointClosure = self.endpointMapping()
         
         let configuration = URLSessionConfiguration.default
         
@@ -189,7 +189,7 @@ public class Client {
 // MARK: - Moya Provider Enpoint Mapping
 extension Client {
     
-    fileprivate func mapping() -> MoyaProvider<MultiTarget>.EndpointClosure {
+    fileprivate func endpointMapping() -> MoyaProvider<MultiTarget>.EndpointClosure {
         let endpointClosure = { (target: MultiTarget) -> Endpoint<MultiTarget> in
             var endpoint = MoyaProvider.defaultEndpointMapping(for: target)
             
